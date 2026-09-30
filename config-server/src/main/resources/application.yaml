@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          # Đường dẫn Git repo THỰC TẾ
+          uri: file:///D:/BACKEND_BT/MD04/Session7/ex4/medical-config-repo
+          default-label: main
